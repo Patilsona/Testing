@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Gmail Test]">
+  <parameter name="params" value="chrome"/>
+  <test name="Crate gmail Account in firefox(failed)">
+    <parameter name="params" value="firefox"/>
+    <classes>
+      <class name="gmailTask.CreateAccount">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="login"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- gmailTask.CreateAccount -->
+    </classes>
+  </test> <!-- Crate gmail Account in firefox(failed) -->
+  <test name="Crate gmail Account in chrome(failed)">
+    <parameter name="params" value="chrome"/>
+    <classes>
+      <class name="gmailTask.CreateAccount">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="login"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- gmailTask.CreateAccount -->
+    </classes>
+  </test> <!-- Crate gmail Account in chrome(failed) -->
+</suite> <!-- Failed suite [Gmail Test] -->

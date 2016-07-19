@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Parallel Tests using SGrid]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="platform" value="Windows"/>
+  <parameter name="url" value="http://only-testing-blog.blogspot.in/2014/01/textbox.html"/>
+  <test name="Windows+IE Test(failed)" parallel="tests">
+    <parameter name="browser" value="Internet Explorer"/>
+    <parameter name="platform" value="Windows"/>
+    <parameter name="url" value="http://only-testing-blog.blogspot.in/2014/01/textbox.html"/>
+    <classes>
+      <class name="seleniumGrid.SeGridTest">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="testCalc"/>
+          <include name="afterTest"/>
+          <include name="afterTest"/>
+          <include name="waitForButtonEnabled"/>
+        </methods>
+      </class> <!-- seleniumGrid.SeGridTest -->
+    </classes>
+  </test> <!-- Windows+IE Test(failed) -->
+</suite> <!-- Failed suite [Parallel Tests using SGrid] -->

@@ -1,0 +1,27 @@
+
+<suite name="Gmail Test">
+	<test name="Crate gmail Account in firefox">
+		<!-- <groups> <run> <include name="PLANE Group" /> <include name="CAR Group" 
+			/> </run> </groups> -->
+		<!-- We can also do like this <groups> <define name ="All"> <include name="PLANE 
+			Group" /> <include name="CAR Group" /> </define> <run> <include name="ALL 
+			/"> </run> </groups> -->
+		
+		<parameter name="params" value="firefox"></parameter>
+		<classes>
+
+			<class name="gmailTask.CreateAccount" />
+
+		</classes>
+
+	</test>
+	
+	<test name="Crate gmail Account in chrome">
+		<parameter name="params" value="chrome"></parameter>
+		<classes>
+			
+			<class name="gmailTask.CreateAccount" />
+		</classes>
+	</test>
+
+</suite>

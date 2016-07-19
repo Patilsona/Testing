@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Multibrowsing Test]">
+  <parameter name="params" value="chrome"/>
+  <test name="FirefoxTest(failed)">
+    <parameter name="params" value="firefox"/>
+    <classes>
+      <class name="testNg.MultiBrowsing">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- testNg.MultiBrowsing -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Multibrowsing Test] -->

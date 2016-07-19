@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parameter Test]">
+  <parameter name="password" value="sonali"/>
+  <parameter name="username" value="sonali"/>
+  <test name="Practice parameter(failed)">
+    <parameter name="password" value="sonali"/>
+    <parameter name="username" value="sonali"/>
+    <classes>
+      <class name="testNg.Parameter">
+        <methods>
+          <include name="SignIn"/>
+        </methods>
+      </class> <!-- testNg.Parameter -->
+    </classes>
+  </test> <!-- Practice parameter(failed) -->
+</suite> <!-- Failed suite [Parameter Test] -->

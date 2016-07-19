@@ -1,0 +1,19 @@
+<suite name="Same TestCases on Different Browser" verbose="1" thread-count="2" parallel="tests">
+	<test name="Test Run on Chrome Browser">
+		<parameter name="browser" value="chrome" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="URL" value="https://accounts.google.com/" />
+		<classes>
+			<class name="seleniumGrid.GridExampleTest" />
+		</classes>
+	</test>
+
+	<test name="Test Run on Firefox browser">
+		<parameter name="browser" value="Firefox" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="URL" value="https://accounts.google.com/" />
+		<classes>
+			<class name="seleniumGrid.GridExampleTest" />
+		</classes>
+	</test>
+</suite>

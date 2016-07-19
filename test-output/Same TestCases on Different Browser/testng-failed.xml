@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Same TestCases on Different Browser]" parallel="tests">
+  <parameter name="browser" value="Firefox"/>
+  <parameter name="platform" value="Windows"/>
+  <parameter name="URL" value="https://accounts.google.com/"/>
+  <test name="Test Run on Firefox browser(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="platform" value="Windows"/>
+    <parameter name="URL" value="https://accounts.google.com/"/>
+    <classes>
+      <class name="seleniumGrid.GridExampleTest">
+        <methods>
+          <include name="mailTest"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- seleniumGrid.GridExampleTest -->
+    </classes>
+  </test> <!-- Test Run on Firefox browser(failed) -->
+</suite> <!-- Failed suite [Same TestCases on Different Browser] -->

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="15" verbose="2" name="Failed suite [My Test Suite Using grid]" parallel="tests">
+  <test name="Selenium Grid Test(failed)" parallel="tests">
+    <classes>
+      <class name="seleniumGrid.Calc">
+        <methods>
+          <include name="calcTest" invocation-numbers="2 0"/>
+        </methods>
+      </class> <!-- seleniumGrid.Calc -->
+    </classes>
+  </test> <!-- Selenium Grid Test(failed) -->
+</suite> <!-- Failed suite [My Test Suite Using grid] -->

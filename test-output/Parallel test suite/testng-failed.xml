@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Parallel test suite]" parallel="classes">
+  <parameter name="myBrowser" value="chrome"/>
+  <test name="Regression 1(failed)" parallel="classes">
+    <parameter name="myBrowser" value="firefox"/>
+    <classes>
+      <class name="seleniumGrid.TestParallel">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="test_01"/>
+        </methods>
+      </class> <!-- seleniumGrid.TestParallel -->
+    </classes>
+  </test> <!-- Regression 1(failed) -->
+  <test name="Regression 2(failed)" parallel="classes">
+    <parameter name="myBrowser" value="chrome"/>
+    <classes>
+      <class name="seleniumGrid.TestParallel">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="test_01"/>
+        </methods>
+      </class> <!-- seleniumGrid.TestParallel -->
+    </classes>
+  </test> <!-- Regression 2(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->

@@ -1,0 +1,18 @@
+
+<suite name="Multibrowsing Test" parallel="tests">
+	<test name="FirefoxTest">
+		<parameter name="params" value="firefox"></parameter>
+		<classes>
+			
+			<class name="testNg.MultiBrowsing" />
+		</classes>
+	</test>
+		<test name="chromeTest">
+		<parameter name="params" value="chrome"></parameter>
+		<classes>
+			
+			<class name="testNg.MultiBrowsing" />
+		</classes>
+	</test>
+
+</suite>

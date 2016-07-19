@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Excel Test]">
+  <test name="Reporter with log4j(failed)">
+    <classes>
+      <class name="testNg.MultiInputExcel">
+        <methods>
+          <include name="Mytest"/>
+        </methods>
+      </class> <!-- testNg.MultiInputExcel -->
+    </classes>
+  </test> <!-- Reporter with log4j(failed) -->
+</suite> <!-- Failed suite [Excel Test] -->

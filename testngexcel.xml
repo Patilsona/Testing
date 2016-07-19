@@ -1,0 +1,19 @@
+
+<suite name="Excel Test">
+	<test name="DataPRovider with excel">
+		<!-- <groups> <run> <include name="PLANE Group" /> <include name="CAR Group" 
+			/> </run> </groups> -->
+		<!-- We can also do like this <groups> <define name ="All"> <include name="PLANE 
+			Group" /> <include name="CAR Group" /> </define> <run> <include name="ALL 
+			/"> </run> </groups> -->
+		
+
+		<classes>
+
+			<class name="testNg.DataProviderWithExcel_002" />
+
+		</classes>
+
+	</test>
+
+</suite>
